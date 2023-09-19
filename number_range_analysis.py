@@ -66,8 +66,8 @@ def find_largest_number(start, end):
 
 def count_even_numbers(start, end):
    
+    # d = []
     # for i in range(a, b + 1):
-    #   d = []
     #   if i % 2 == 0:
     #       d.append(i)
     # return len(d)
@@ -92,8 +92,8 @@ def count_even_numbers(start, end):
 
 def count_odd_numbers(start, end):
     
+    # d = []
     # for i in range(a, b + 1):
-    #   d = []
     #   if i % 2 != 0:
     #       d.append(i)
     # return len(d)
