@@ -1,5 +1,4 @@
 #number_range_analysis.py
-
 '''
 Implement Number Analysis Functions
 
@@ -13,6 +12,7 @@ Implement Number Analysis Functions
 # TODO: IN A COMMENT WITHIN EACH DEF, WRITE PSEUDOCODE FOR EACH SOLUTION
 
 def calculate_sum(start, end):
+    # return sum(range(x,y +1))
     """
     Calculate the sum of numbers within the specified range.
 
@@ -26,7 +26,12 @@ def calculate_sum(start, end):
     # TODO: Implement the logic to calculate the sum of numbers within the range.
     # TODO: Return the calculated sum.
 
+    return sum(range(start, end + 1))
+
 def find_smallest_number(start, end):
+    
+    # return min(range(x, y + 1))
+    
     """
     Find the smallest number within the specified range.
 
@@ -39,8 +44,12 @@ def find_smallest_number(start, end):
     """
     # TODO: Implement the logic to find the smallest number within the range.
     # TODO: Return the found smallest number.
+    return min(range(start, end + 1))
 
 def find_largest_number(start, end):
+    
+    # return max(range(x, y + 1))
+    
     """
     Find the largest number within the specified range.
 
@@ -53,8 +62,16 @@ def find_largest_number(start, end):
     """
     # TODO: Implement the logic to find the largest number within the range.
     # TODO: Return the found largest number.
+    return max(range(start, end + 1))
 
 def count_even_numbers(start, end):
+   
+    # for i in range(a, b + 1):
+    #   d = []
+    #   if i % 2 == 0:
+    #       d.append(i)
+    # return len(d)
+
     """
     Count the number of even numbers within the specified range.
 
@@ -67,8 +84,20 @@ def count_even_numbers(start, end):
     """
     # TODO: Implement the logic to count even numbers within the range.
     # TODO: Return the count of even numbers.
+    even_numbers = []
+    for number in range(start, end + 1):   
+       if number % 2 == 0:
+           even_numbers.append(number)
+    return len(even_numbers)
 
 def count_odd_numbers(start, end):
+    
+    # for i in range(a, b + 1):
+    #   d = []
+    #   if i % 2 != 0:
+    #       d.append(i)
+    # return len(d)
+    
     """
     Count the number of odd numbers within the specified range.
 
@@ -81,3 +110,8 @@ def count_odd_numbers(start, end):
     """
     # TODO: Implement the logic to count odd numbers within the range.
     # TODO: Return the count of odd numbers.
+    odd_numbers = []
+    for number in range(start, end + 1):
+       if number % 2 != 0:
+           odd_numbers.append(number)
+    return len(odd_numbers)
